@@ -1,0 +1,11 @@
+.git
+.gitignore
+.DS_Store
+.idea
+.vscode
+bin
+build/.cache
+build/dists
+*.coverprofile
+*.out
+

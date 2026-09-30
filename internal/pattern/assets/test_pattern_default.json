@@ -1,0 +1,925 @@
+{
+  "pattern": "default",
+  "cases": [
+    {
+      "input": "file document.txt",
+      "expected_name": "File Document",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "FILE DOCUMENT.txt",
+      "expected_name": "File Document",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "file-document.txt",
+      "expected_name": "File - Document",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "file-_document.txt",
+      "expected_name": "File - Document",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "file_document.txt",
+      "expected_name": "File - Document",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "file - document.txt",
+      "expected_name": "File - Document",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "file   document.txt",
+      "expected_name": "File Document",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "file  document.txt",
+      "expected_name": "File Document",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "file     document.txt",
+      "expected_name": "File Document",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "file--document.txt",
+      "expected_name": "File - Document",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "file-__document.txt",
+      "expected_name": "File - Document",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "file__document.txt",
+      "expected_name": "File - Document",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "file_-document.txt",
+      "expected_name": "File - Document",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "file_-_document.txt",
+      "expected_name": "File - Document",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "file -_ document.txt",
+      "expected_name": "File - Document",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "file---document.txt",
+      "expected_name": "File - Document",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "a b.txt",
+      "expected_name": "A B",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "a-b.txt",
+      "expected_name": "A - B",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "2025-07.pdf",
+      "expected_name": "2025-07",
+      "expected_extension": ".pdf"
+    },
+    {
+      "input": "2025-12-05.pdf",
+      "expected_name": "2025-12-05",
+      "expected_extension": ".pdf"
+    },
+    {
+      "input": "25-07.pdf",
+      "expected_name": "25-07",
+      "expected_extension": ".pdf"
+    },
+    {
+      "input": "07-2025.pdf",
+      "expected_name": "07-2025",
+      "expected_extension": ".pdf"
+    },
+    {
+      "input": "05-12-2025.pdf",
+      "expected_name": "05-12-2025",
+      "expected_extension": ".pdf"
+    },
+    {
+      "input": "05-2025-12.pdf",
+      "expected_name": "05-2025-12",
+      "expected_extension": ".pdf"
+    },
+    {
+      "input": "05-12-25.pdf",
+      "expected_name": "05-12-25",
+      "expected_extension": ".pdf"
+    },
+    {
+      "input": "report-2025-12-05-final.pdf",
+      "expected_name": "Report - 2025-12-05 - Final",
+      "expected_extension": ".pdf"
+    },
+    {
+      "input": "2025-7.pdf",
+      "expected_name": "2025 - 7",
+      "expected_extension": ".pdf"
+    },
+    {
+      "input": "a---b.txt",
+      "expected_name": "A - B",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "a_b.txt",
+      "expected_name": "A - B",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "a--b.txt",
+      "expected_name": "A - B",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "a___b.txt",
+      "expected_name": "A - B",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "a__b.txt",
+      "expected_name": "A - B",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "a_-b.txt",
+      "expected_name": "A - B",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "a-_-b.txt",
+      "expected_name": "A - B",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "version 2.txt",
+      "expected_name": "Version 2",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "version2file.txt",
+      "expected_name": "Version2file",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "2nd file.txt",
+      "expected_name": "2nd File",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "123.txt",
+      "expected_name": "123",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "file123 name456.txt",
+      "expected_name": "File123 Name456",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "file.txt",
+      "expected_name": "File",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "FILE.TXT",
+      "expected_name": "File",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "archive.tar.gz",
+      "expected_name": "Archive",
+      "expected_extension": ".tar.gz"
+    },
+    {
+      "input": "my_file.txt",
+      "expected_name": "My - File",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "my__file.txt",
+      "expected_name": "My - File",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "my-file.txt",
+      "expected_name": "My - File",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "o'connor file.txt",
+      "expected_name": "O Connor File",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "rock&roll.txt",
+      "expected_name": "Rock Roll",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "hello,world.txt",
+      "expected_name": "Hello World",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "hello(world).txt",
+      "expected_name": "Hello (World)",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "hello (world).txt",
+      "expected_name": "Hello (World)",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "hello   (world).txt",
+      "expected_name": "Hello (World)",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "hello\u00a0(world).txt",
+      "expected_name": "Hello (World)",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "hello(world)(again).txt",
+      "expected_name": "Hello (World) (Again)",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "hello (world)  (again).txt",
+      "expected_name": "Hello (World) (Again)",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "(hello world).txt",
+      "expected_name": "(Hello World)",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "hello().txt",
+      "expected_name": "Hello ()",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "hello(world)-draft.txt",
+      "expected_name": "Hello (World) - Draft",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "hello(world).tar.gz",
+      "expected_name": "Hello (World)",
+      "expected_extension": ".tar.gz"
+    },
+    {
+      "input": "hello[world].txt",
+      "expected_name": "Hello World",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "hello{world}.txt",
+      "expected_name": "Hello World",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "hello=world.txt",
+      "expected_name": "Hello World",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "hello+world.txt",
+      "expected_name": "Hello World",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "hello@world.txt",
+      "expected_name": "Hello World",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "hello#world.txt",
+      "expected_name": "Hello World",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "hello$world.txt",
+      "expected_name": "Hello World",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "hello%world.txt",
+      "expected_name": "Hello World",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "hello^world.txt",
+      "expected_name": "Hello World",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "hello~world.txt",
+      "expected_name": "Hello World",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "file.name.txt",
+      "expected_name": "File - Name",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "sales--report.txt",
+      "expected_name": "Sales - Report",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "sales__report.txt",
+      "expected_name": "Sales - Report",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "sales-_report.txt",
+      "expected_name": "Sales - Report",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "backup-2024-08.txt",
+      "expected_name": "Backup - 2024-08",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "backup__2024.txt",
+      "expected_name": "Backup - 2024",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "photo album.txt",
+      "expected_name": "Photo Album",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "q1_2024_report.txt",
+      "expected_name": "Q1 - 2024 - Report",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "invoice-0001.txt",
+      "expected_name": "Invoice - 0001",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "project (draft).txt",
+      "expected_name": "Project (Draft)",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "project [archive].txt",
+      "expected_name": "Project Archive",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "project {archive}.txt",
+      "expected_name": "Project Archive",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "research+notes.txt",
+      "expected_name": "Research Notes",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "release#1.txt",
+      "expected_name": "Release 1",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "budget$2024.txt",
+      "expected_name": "Budget 2024",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "coverage%2024.txt",
+      "expected_name": "Coverage 2024",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "café file.txt",
+      "expected_name": "Cafe File",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "CAFÉ FILE.txt",
+      "expected_name": "Cafe File",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "naïve approach.txt",
+      "expected_name": "Naive Approach",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "ÜBER FILE.txt",
+      "expected_name": "Uber File",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "mañana.txt",
+      "expected_name": "Manana",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "привет мир.txt",
+      "expected_name": "Привет Мир",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "ПРИВЕТ МИР.txt",
+      "expected_name": "Привет Мир",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "東京 file.txt",
+      "expected_name": "東京 File",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "élan vital.txt",
+      "expected_name": "Elan Vital",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "resume.txt",
+      "expected_name": "Resume",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "multiple     spaces.txt",
+      "expected_name": "Multiple Spaces",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "report  -  draft.txt",
+      "expected_name": "Report - Draft",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "report-__-draft.txt",
+      "expected_name": "Report - Draft",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "file   -   document.txt",
+      "expected_name": "File - Document",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "file -- document.txt",
+      "expected_name": "File - Document",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "file _ document.txt",
+      "expected_name": "File - Document",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "-file-.txt",
+      "expected_name": "- File -",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "--file--.txt",
+      "expected_name": "- File -",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "_file_.txt",
+      "expected_name": "- File -",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "hidden...file.txt",
+      "expected_name": "Hidden - File",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "file...document.txt",
+      "expected_name": "File - Document",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "first.second.txt",
+      "expected_name": "First - Second",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "quarter.one.txt",
+      "expected_name": "Quarter - One",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": ".hidden",
+      "expected_name": "",
+      "expected_extension": ".hidden"
+    },
+    {
+      "input": ".gitignore",
+      "expected_name": "",
+      "expected_extension": ".gitignore"
+    },
+    {
+      "input": "..hidden..file",
+      "expected_name": "Hidden",
+      "expected_extension": ".file"
+    },
+    {
+      "input": "2024-report.txt",
+      "expected_name": "2024 - Report",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "report-2024.txt",
+      "expected_name": "Report - 2024",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "v2-release.txt",
+      "expected_name": "V2 - Release",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "api_v1.txt",
+      "expected_name": "Api - V1",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "JSON parser.txt",
+      "expected_name": "Json Parser",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "camelCaseName.txt",
+      "expected_name": "Camelcasename",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "already Title Case.txt",
+      "expected_name": "Already Title Case",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "weekly ✅ report.txt",
+      "expected_name": "Weekly Report",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "hello(world).tar.gz",
+      "expected_name": "Hello (World)",
+      "expected_extension": ".tar.gz"
+    },
+    {
+      "input": "readme.txt",
+      "expected_name": "Readme",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "backup_file.TAR.GZ",
+      "expected_name": "Backup - File",
+      "expected_extension": ".tar.gz"
+    },
+    {
+      "input": "archive._newfile. new.tar.gz",
+      "expected_name": "Archive - Newfile - New",
+      "expected_extension": ".tar.gz"
+    },
+    {
+      "input": "john.smith.resume.pdf",
+      "expected_name": "John - Smith - Resume",
+      "expected_extension": ".pdf"
+    },
+    {
+      "input": ".env.local",
+      "expected_name": "",
+      "expected_extension": ".env.local"
+    },
+    {
+      "input": ".GITIGNORE",
+      "expected_name": "",
+      "expected_extension": ".gitignore"
+    },
+    {
+      "input": "file.document.txt",
+      "expected_name": "File - Document",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "file.-document.txt",
+      "expected_name": "File - Document",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "file._document.txt",
+      "expected_name": "File - Document",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "file.-_document.txt",
+      "expected_name": "File - Document",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "file-._document.txt",
+      "expected_name": "File - Document",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "file . document.txt",
+      "expected_name": "File - Document",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "file...---document.txt",
+      "expected_name": "File - Document",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "á.txt",
+      "expected_name": "A",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "Á.txt",
+      "expected_name": "A",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "à.txt",
+      "expected_name": "A",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "À.txt",
+      "expected_name": "A",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "â.txt",
+      "expected_name": "A",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "Â.txt",
+      "expected_name": "A",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "ã.txt",
+      "expected_name": "A",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "Ã.txt",
+      "expected_name": "A",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "ä.txt",
+      "expected_name": "A",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "Ä.txt",
+      "expected_name": "A",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "ā.txt",
+      "expected_name": "A",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "Ā.txt",
+      "expected_name": "A",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "ă.txt",
+      "expected_name": "A",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "Ă.txt",
+      "expected_name": "A",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "å.txt",
+      "expected_name": "A",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "Å.txt",
+      "expected_name": "A",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "ą.txt",
+      "expected_name": "A",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "Ą.txt",
+      "expected_name": "A",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "č.txt",
+      "expected_name": "C",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "Č.txt",
+      "expected_name": "C",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "ċ.txt",
+      "expected_name": "C",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "Ċ.txt",
+      "expected_name": "C",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "ç.txt",
+      "expected_name": "C",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "Ç.txt",
+      "expected_name": "C",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "ě.txt",
+      "expected_name": "E",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "Ě.txt",
+      "expected_name": "E",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "ő.txt",
+      "expected_name": "O",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "Ő.txt",
+      "expected_name": "O",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "ş.txt",
+      "expected_name": "S",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "Ş.txt",
+      "expected_name": "S",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "ạ.txt",
+      "expected_name": "A",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "Ạ.txt",
+      "expected_name": "A",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "ǜ.txt",
+      "expected_name": "U",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "Ǜ.txt",
+      "expected_name": "U",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "ậ.txt",
+      "expected_name": "A",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "Ậ.txt",
+      "expected_name": "A",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "ắ.txt",
+      "expected_name": "A",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "Ắ.txt",
+      "expected_name": "A",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "Pokémon.txt",
+      "expected_name": "Pokemon",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "Crème brûlée.txt",
+      "expected_name": "Creme Brulee",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "São Tomé.txt",
+      "expected_name": "Sao Tome",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "Český Krumlov.txt",
+      "expected_name": "Cesky Krumlov",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "Dvořák.txt",
+      "expected_name": "Dvorak",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "Tiếng Việt.txt",
+      "expected_name": "Tieng Viet",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "déjà_vu-été.txt",
+      "expected_name": "Deja - Vu - Ete",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "ééé ààà.txt",
+      "expected_name": "Eee Aaa",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "Cafe\u0301 Espan\u0303a A\u0308.txt",
+      "expected_name": "Cafe Espana A",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "smørrebrød.txt",
+      "expected_name": "Smørrebrød",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "Łódź.txt",
+      "expected_name": "Łodz",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "encyclopædia.txt",
+      "expected_name": "Encyclopædia",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": "Straße.txt",
+      "expected_name": "Straße",
+      "expected_extension": ".txt"
+    },
+    {
+      "input": ".café",
+      "expected_name": "",
+      "expected_extension": ".café"
+    }
+  ]
+}

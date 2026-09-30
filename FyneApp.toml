@@ -1,0 +1,16 @@
+Languages = ["en-US", "es-MX"]
+
+[Details]
+Icon = "internal/ui/assets/Icon.png"
+Name = "File & Folder Renamer"
+ID = "com.eightaugusto.filefolderrenamer"
+Version = "1.0.0"
+
+[LinuxAndBSD]
+GenericName = "File Renaming Utility"
+Categories = ["Utility", "FileTools"]
+Comment = "Preview and safely apply consistent file and folder names"
+Keywords = ["files", "folders", "rename", "organize"]
+
+[Migrations]
+fyneDo = true

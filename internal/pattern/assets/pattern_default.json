@@ -1,0 +1,71 @@
+{
+  "name": "default",
+  "rules": [
+    {
+      "kind": "remove_diacritics",
+      "latin": true,
+      "_description": "Remove decomposable diacritics from Latin letters. Characters that require transliteration are preserved."
+    },
+    {
+      "kind": "replace_runes",
+      "deduplicate": true,
+      "remove": ["-", ":", "_", "."],
+      "replacement": "-",
+      "_description": "Normalize hyphens, colons, underscores and basename dots to one hyphen."
+    },
+    {
+      "kind": "replace_runes",
+      "deduplicate": true,
+      "remove": ["-"],
+      "replacement": " - ",
+      "exclude_matches": ["\\b(?:(?:[0-9]{2}|[0-9]{4})-[0-9]{2}-[0-9]{2}|[0-9]{2}-(?:[0-9]{2}|[0-9]{4})-[0-9]{2}|[0-9]{2}-[0-9]{2}-(?:[0-9]{2}|[0-9]{4})|(?:[0-9]{2}|[0-9]{4})-[0-9]{2}|[0-9]{2}-(?:[0-9]{2}|[0-9]{4}))\\b"],
+      "_description": "Format normalized hyphens with one space on each side, except two- or three-part numeric dates with a two- or four-digit year."
+    },
+    {
+      "kind": "replace_runes",
+      "space": true,
+      "replacement": " ",
+      "_description": "Normalize every Unicode whitespace rune to one regular space."
+    },
+    {
+      "kind": "replace_runes",
+      "deduplicate": true,
+      "remove": [" "],
+      "replacement": " ",
+      "_description": "Deduplicate normalized spaces."
+    },
+    {
+      "kind": "case",
+      "mode": "lower",
+      "_description": "Convert the full name to lower case."
+    },
+    {
+      "kind": "case",
+      "mode": "upper",
+      "positions": [0],
+      "by_word": true,
+      "_description": "Uppercase the first rune of every word."
+    },
+    {
+      "kind": "replace_runes",
+      "remove": ["("],
+      "replacement": " (",
+      "_description": "Insert one space before an opening parenthesis."
+    },
+    {
+      "kind": "replace_runes",
+      "special": true,
+      "preserve": ["-", "(", ")"],
+      "replacement": " ",
+      "_description": "Replace special runes with spaces while preserving hyphens and parentheses."
+    },
+    {
+      "kind": "replace_runes",
+      "deduplicate": true,
+      "trim": true,
+      "remove": [" "],
+      "replacement": " ",
+      "_description": "Deduplicate and trim spaces introduced by special-rune replacements."
+    }
+  ]
+}
